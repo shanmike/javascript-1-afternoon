@@ -19,6 +19,12 @@ var name = 'Tyler';
 
 //Code Here
 
+function isTyler(name){
+  if (name == "Tyler"){
+    return true;
+  }
+  return false;
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -29,6 +35,9 @@ var name = 'Tyler';
 
 //Code Here
 
+function getName(){ 
+  return prompt("Whats your name?")
+} 
 
 
 ////////// PROBLEM 3 //////////
@@ -41,7 +50,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome (){
+  
+  return alert("Welcome, "+getName())
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,8 +63,8 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
-
+//Argument is the value of the variable that gets passed to the function.
+//Parameter is the variable in the method definition.
 
 ////////// PROBLEM 5 //////////
 
@@ -61,7 +73,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+// false, null, undefined, 0, "", '', and NaN
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +83,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+
+function myName (str){
+  return str = "Michael"
+}
 
 
 /*
@@ -80,7 +95,7 @@ var name = 'Tyler';
 
 //Code Here
 
-
+newMyName = myName;
 
 /*
   Now alert the result of invoking newMyName
@@ -88,7 +103,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert(newMyName())
 
 ////////// PROBLEM 7 //////////
 
@@ -98,7 +113,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function outerFn(){
+  return newMyName;
+}
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
@@ -106,6 +123,7 @@ var name = 'Tyler';
 
 //Code Here
 
+innerFn = outerFn();
 
 
 /* 
@@ -113,3 +131,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn()
